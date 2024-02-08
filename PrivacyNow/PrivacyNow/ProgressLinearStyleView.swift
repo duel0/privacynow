@@ -11,7 +11,7 @@ struct ProgressLinearStyleView: View {
     
     //MARK: PROPERTIES
 
-    @State private var progress: Double = 0.0
+    @State private var progress: Double = 0.47
     let timerInterval = 0.5 // Adjust this value to control the animation speed
     
  
@@ -21,19 +21,17 @@ struct ProgressLinearStyleView: View {
             Section{
                 VStack() {
                     ProgressView(value: progress, total: 1.0) {
-                        Text("\(Int(progress*100))% progress")
+                        Text("\(Int(progress*100))% score")
                             .font(.footnote)
                     }
                     .progressViewStyle(.linear)
                     .padding(.vertical)
                 }
-                .onAppear {
-                    startAnimating()
-                }
+                
             } header: {
                 Text("Score")
             }
-        }
+        }.scrollDisabled(true)
         
     }
     
