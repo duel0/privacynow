@@ -1,5 +1,5 @@
 # PrivacyNow
-
+![Logo](PN.png)
 Privacy Now is your guardian in the digital world.
 Easily check and manage public information about
 you online. Hide sensitive data and discover tips to
