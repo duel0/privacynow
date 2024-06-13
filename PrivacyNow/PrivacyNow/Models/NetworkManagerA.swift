@@ -17,7 +17,7 @@ class NetworkManagerA {
         let headers = [
             "accept": "application/json",
             "content-type": "application/json",
-            "authorization": "Bearer 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"
+            "authorization": "Bearer pplx-YOUR_API_KEY_HERE"
         ]
 
         let parameters = [
